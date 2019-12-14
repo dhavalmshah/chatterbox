@@ -15,3 +15,7 @@ USER root
       nvm install --lts && \
     nvm install-latest-npm && \
     npm install -g @angular/cli"
+
+RUN bash -c ". /home/gitpod/.sdkman/bin/sdkman-init.sh \
+             && sdk install java 8.0.232-amzn \
+             && sdk default java 8.0.232-amzn"
