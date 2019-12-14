@@ -7,6 +7,7 @@ public class TestService
 {
     public String mockService()
     {
+    		System.out.println("ON");
         return "Hello world";
     }
 }
