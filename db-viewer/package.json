@@ -1,0 +1,17 @@
+{
+  "name": "db-viewer",
+  "version": "1.0.0",
+  "description": "Viewer for MySQL DB",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-mysql-admin": "^0.1.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Dhaval Shah",
+  "license": "ISC"
+}
