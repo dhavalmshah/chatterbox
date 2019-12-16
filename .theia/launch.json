@@ -1,0 +1,11 @@
+{
+   "configurations": [
+      {
+         "type": "java",
+         "name": "CodeLens (Launch) - ChatterboxApplication",
+         "request": "launch",
+         "mainClass": "in.smoothline.chatterbox.ChatterboxApplication",
+         "projectName": "chatterbox"
+      }
+   ]
+}
