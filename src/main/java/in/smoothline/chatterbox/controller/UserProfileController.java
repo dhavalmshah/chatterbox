@@ -17,4 +17,11 @@ class UserProfileController
     {
         return "";
     }
+
+    @RequestMapping(value = "/createCircleUserProfile")
+    @ResponseBody
+    public String createCircleUserProfile()
+    {
+        return "";
+    }
 }
