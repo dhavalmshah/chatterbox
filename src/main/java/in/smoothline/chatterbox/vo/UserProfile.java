@@ -1,7 +1,5 @@
 package in.smoothline.chatterbox.vo;
 
-import java.io.Serializable;
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import lombok.Getter;
