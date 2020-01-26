@@ -1,7 +1,5 @@
 package in.smoothline.chatterbox.controller;
 
-import com.google.gson.Gson;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,7 +10,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import in.smoothline.chatterbox.service.CircleUserProfileService;
 import in.smoothline.chatterbox.vo.CircleUserProfile;
-import in.smoothline.chatterbox.vo.UserProfile;
 
 
 
@@ -27,7 +24,7 @@ class UserProfileController
     @ResponseBody
     public String registerUser()
     {
-        UserProfile up = new UserProfile();
+       // UserProfile up = new UserProfile();
         return "";
     }
 
