@@ -7,7 +7,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -32,11 +31,14 @@ class UserProfileController
         return "";
     }
 
-    @PostMapping(value = "/createCircleUserProfile")
+    @GetMapping(value = "/createCircleUserProfile")
     @ResponseBody
     public String createCircleUserProfile()
     {
-        return "";
+        CircleUserProfile circleUserProfile = new CircleUserProfile();
+
+        int userId = circleUserProfileService.createCircleUserProfileService(circleUserProfile);
+        return String.valueOf(userId);
     }
 
      @GetMapping(value = "/fetchCircleUserProfile")
