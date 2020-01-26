@@ -28,14 +28,26 @@ class UserProfileController
         return "";
     }
 
-    @GetMapping(value = "/createCircleUserProfile")
+    @PostMapping(value = "/createCircleUserProfile", consumes = "application/json", produces = 
+    "application/json")
     @ResponseBody
-    public String createCircleUserProfile()
+    public String createCircleUserProfile(@RequestParam CircleUserProfile circleUserProfile)
     {
-        CircleUserProfile circleUserProfile = new CircleUserProfile();
+        String message = null;
 
-        int userId = circleUserProfileService.createCircleUserProfileService(circleUserProfile);
-        return String.valueOf(userId);
+        int circleuserprofilecreated = circleUserProfileService.createCircleUserProfileService(circleUserProfile);
+        
+        System.out.println(" circle userprofile created " + circleuserprofilecreated);
+
+        if(circleuserprofilecreated == 1)
+        {
+            message = "success";
+        }else
+        {
+            message = "failure";
+        }
+
+        return message;
     }
 
      @GetMapping(value = "/fetchCircleUserProfile")

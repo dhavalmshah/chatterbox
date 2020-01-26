@@ -23,6 +23,7 @@ public class CircleUserProfileService
 
     public int createCircleUserProfileService(CircleUserProfile circleUserProfile) {
 
+       /* 
         circleUserProfile.setUserId("vparekh");
         circleUserProfile.setCircleUserId("circleprofile_"+ circleUserProfile.getUserId());
         circleUserProfile.setHomeServer("homeserver1");
@@ -35,6 +36,7 @@ public class CircleUserProfileService
         circleUserProfile.setIsActive("Yes");
         circleUserProfile.setCreatedTs("2020-01-26");
         circleUserProfile.setLastModifiedTs("2020-01-26");
+        */
 
         int result = jdbcTemplate.update(
                 "INSERT INTO CIRCLE_USER_PROFILE (circle_user_id, user_id, homeserver, access_token, mobile_number, "+
