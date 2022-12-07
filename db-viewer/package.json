@@ -4,7 +4,7 @@
   "description": "Viewer for MySQL DB",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "node-mysql-admin": "^0.1.8"
   },
   "devDependencies": {},
